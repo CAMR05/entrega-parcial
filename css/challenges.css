@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 
 :root {
-    --green: #00ff00;
+    --crimson: crimson;
     --scroll-background: #000;
-    --scroll-foreground: #0f0;
-    --scroll-background-over: #666;
+    --scroll-foreground: crimson;
+    --scroll-background-over: purple;
     --scroll-border-radius: 0px;
     --scroll-size: 10px;
 }
 
 body {
-    background-color: #000;
-    font-family: 'Source Code Pro', monospace;
+    background-color: olivedrab;
+    font-family: 'Ga Maamli', sans-serif;
 }
 
 #challenge-main-header {
@@ -20,7 +20,7 @@ body {
 
 #challenge-container {
     max-width: 640px;
-    color: #00ff00;
+    color: midnightblue;
 }
 
 /* nav */
@@ -46,13 +46,14 @@ nav#challenge-nav ul li {
 
 /* links */
 a {
-    background-color: #000;
-    color: #0F0;
+    background-color: crimson;
+    color: midnightblue;
+    padding: .2em;
 }
 
 a:hover {
-    background-color: #0F0;
-    color: #000;
+    background-color: purple;
+    color: orangered;
 }
 
 a.challenge-link {
@@ -71,7 +72,7 @@ a.challenge-link {
 
 /* footer */
 footer#challenge-footer {
-    color: #0F0;
+    color: midnightblue;
     text-transform: uppercase;
     font-family: 'Source Code Pro';
     padding: 1em;
@@ -82,13 +83,13 @@ pre {
     line-height: 1.2em;
 }
 code {
-    background: #000;
+    background: crimson;
     border: 1px solid currentColor;
     border-radius: 2px;
 }
 
 hr {
-    border-top: 1px solid #0F0;
+    border-top: 1px solid crimson;
 }
 
 h1 {

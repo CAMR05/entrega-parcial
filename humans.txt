@@ -1,10 +1,10 @@
 /* TEAM */
-	WebCraftDev: JuanFuent.es
-	Contact: input [at] juanfuent.es
-	From: Hidalgo, Mexico
+	WebCraftDev: Carlos Arturo Moheno Rubín de Celis / CapLitos05
+	Contact: input [at] CAMR05
+	From: Mexico City, Mexico
 
 /* SITE */
-	Last update: 2025/03/05
+	Last update: 2025/03/25
 	Language: Es-LA
 	Doctype: HTML5
 	IDE: Visual Studio Code
