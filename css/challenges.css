@@ -5,19 +5,20 @@
     --scroll-background: #000;
     --scroll-foreground: crimson;
     --scroll-background-over: purple;
-    --scroll-border-radius: 0px;
-    --scroll-size: 10px;
+    --scroll-border-radius: 10px;
+    --scroll-size: 15px;
 }
 
-
 body {
-    background-color: olivedrab;
+    background-image: url('../img/CarlosMoheno_Movimiento.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     font-family: 'Ga Maamli', sans-serif;
     min-height: 100%;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    /* mobile. */
     font-size: 14px;
     line-height: 1.5em;
     text-align: center;
@@ -37,7 +38,6 @@ body {
       font-size: 18px;
     }
 }
-}
 
 
 
@@ -47,10 +47,8 @@ body {
 
 #challenge-container {
     max-width: 640px;
-    color: midnightblue;
+    color: crimson;
 }
-
-
 
 /* nav */
 nav#challenge-nav {
@@ -75,7 +73,6 @@ nav#challenge-nav ul li {
 
 /* links */
 a {
-    background-color: crimson;
     color: midnightblue;
     padding: .2em;
 }
@@ -112,7 +109,6 @@ pre {
     line-height: 1.2em;
 }
 code {
-    background: crimson;
     border: 1px solid currentColor;
     border-radius: 2px;
 }
@@ -122,7 +118,6 @@ hr {
 }
 
 h1 {
-
     font-size: 2.5em;
 }
 
@@ -133,6 +128,7 @@ h2 {
 p {
     margin: 0 auto;
 }
+
 /* classes utilities */
 .text-center {
     text-align: center;
