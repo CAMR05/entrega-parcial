@@ -9,10 +9,37 @@
     --scroll-size: 10px;
 }
 
+
 body {
     background-color: olivedrab;
     font-family: 'Ga Maamli', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    /* mobile. */
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: center;
+    text-decoration: solid;
 }
+
+/* Laptop / Tablet */
+@media (min-width: 768px) {   
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+}
+}
+
+
 
 #challenge-main-header {
     padding: 1em;
@@ -22,6 +49,8 @@ body {
     max-width: 640px;
     color: midnightblue;
 }
+
+
 
 /* nav */
 nav#challenge-nav {
