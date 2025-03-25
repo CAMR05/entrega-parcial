@@ -3,7 +3,7 @@
 * A modern, HTML5-ready alternative to CSS resets
 * @see: https://necolas.github.io/normalize.css 
 */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 @import url('scroll.css');
 
 html {
@@ -22,35 +22,32 @@ html {
 
 
 :root {
-    --bg-color: #FFF;
-    --text-color: #1a1a1a;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --crimson: crimson;
+    --scroll-background: #000;
+    --scroll-foreground: crimson;
+    --scroll-background-over: purple;
+    --scroll-border-radius: 10px;
+    --scroll-size: 15px;
 }
-/* Modo dark detectado por media query */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: #1a1a1a;
-        --text-color: #ffffff;
-    }
-}
+
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
+    background-image: url('../img/CarlosMoheno_Movimiento.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Ga Maamli', sans-serif;
     min-height: 100%;
     display: flex;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
-    /* mobile. Tamaño mínimo recomendado */
     font-size: 14px;
-    line-height: 1.4em;
-    overflow-x: hidden;
+    line-height: 1.5em;
+    text-align: center;
+    text-decoration: solid;
 }
 
 /* Laptop / Tablet */
-@media (min-width: 768px) {
+@media (min-width: 768px) {   
     body {
         font-size: 16px;
     }
@@ -63,8 +60,75 @@ body {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.1em;
+
+
+
+
+/* nav */
+nav#challenge-nav {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    max-width: 640px;
+    width: 100%;
+}
+nav#challenge-nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+nav#challenge-nav ul li {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* links */
+a {
+    color: midnightblue;
+    padding: .2em;
+}
+
+a:hover {
+    background-color: purple;
+    color: orangered;
+}
+
+a.challenge-link {
+    width: 100%;
+    text-align: center;
+    display: block;
+    max-width: 320px;
+    margin: 0 auto;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 2em;
+    border: 1px solid currentColor;
+    transition: all 80ms ease-in-out;
+    text-decoration: none;
+}
+
+/* footer */
+footer#challenge-footer {
+    color: midnightblue;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    padding: 1em;
+}
+
+/* code */
+pre {
+    line-height: 1.2em;
+}
+code {
+    border: 1px solid currentColor;
+    border-radius: 2px;
+}
+
+hr {
+    border-top: 1px solid;
 }
 
 h1 {
@@ -75,80 +139,15 @@ h2 {
     font-size: 2em;
 }
 
-h3 {
-    font-size: 1.75em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
-    font-size: 1em;
-}
-
-img {
-    max-width: 100%;
-}
-
-header {
-    width: 100%;
-}
-
-header nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-a.box-link {
-    color: #000;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0.25em .5em;
-    text-transform: uppercase;
-    min-width: 42px;
-    background-color: #fff;
-    transition: all 300ms ease-out;
-}
-
-a.box-link:hover {
-    transition: all 100ms ease-in;
-    filter: invert(1);
-}
-
-a.active {
-    pointer-events: none;
-}
-
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-}
-
 p {
-    max-width: 60ch; /* Ancho máximo basado en el ancho del carácter "0" */
-}
-
-.container {
     margin: 0 auto;
-    padding: 0 1em;
-    width: 90%;
-    min-width: 290px;
-    max-width: 1200px;
 }
 
-nav.container {
-    padding: 1em;
+/* classes utilities */
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
