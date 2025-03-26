@@ -1,17 +1,8 @@
-/*
-* Normalize.css
-* A modern, HTML5-ready alternative to CSS resets
-* @see: https://necolas.github.io/normalize.css 
-*/
+
 @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 @import url('scroll.css');
 
 html {
-    /* 
-    * box-sizing
-    * default: 'box-sizing: content-box'
-    * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
-    */
     box-sizing: border-box;
     height: 100%;
 }
@@ -24,7 +15,7 @@ html {
 :root {
     --crimson: crimson;
     --scroll-background: #000;
-    --scroll-foreground: crimson;
+    --scroll-foreground: orangered;
     --scroll-background-over: purple;
     --scroll-border-radius: 10px;
     --scroll-size: 15px;
@@ -44,17 +35,21 @@ body {
     line-height: 1.5em;
     text-align: center;
     text-decoration: solid;
-    color: olivedrab;
+    color: orangered;
 }
 
-/* Laptop / Tablet */
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
 @media (min-width: 768px) {   
     body {
         font-size: 16px;
     }
 }
 
-/* Escritorio */
+
 @media (min-width: 1024px) {
     body {
       font-size: 18px;
@@ -62,15 +57,12 @@ body {
 }
 
 
-
-
-
-
 /* links */
 a {
-    color: midnightblue;
+    color: crimson;
     padding: .2em;
 }
+
 
 a:hover {
     background-color: purple;
@@ -79,44 +71,4 @@ a:hover {
 
 
 
-/* footer */
-footer#challenge-footer {
-    color: crimson;
-    text-transform: uppercase;
-    font-family: 'Source Code Pro';
-    padding: 1em;
-}
 
-/* code */
-pre {
-    line-height: 1.2em;
-}
-code {
-    border: 1px solid currentColor;
-    border-radius: 2px;
-}
-
-hr {
-    border-top: 1px solid;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-p {
-    margin: 0 auto;
-}
-
-/* classes utilities */
-.text-center {
-    text-align: center;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
